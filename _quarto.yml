@@ -1,0 +1,86 @@
+project:
+  type: book
+  output-dir: docs
+  preview:
+    port: 4300
+
+engine: knitr
+
+book:
+  sidebar:
+    search: true
+    logo: assets/images/favicon.ico
+    collapse-level: 1
+    background: 'light'
+  title: "Spreadsheet Crash Course"
+  subtitle: "Cronkite School @ ASU Spring 2024"
+  page-navigation: true
+  reader-mode: true
+#  downloads: [pdf, epub]
+#   navbar:
+#     background: secondary
+#     search: true
+#     right:
+#       - icon: github
+#         href: https://github.com/cronkitedata/djtextbook/
+# #        aria-label: github
+# #    title: false
+
+
+  # page-footer:
+  #    background: "#096b72"
+  #    left: |
+  #      Data reporting for investigative journalism, Spring 2023 was written by Sarah Cohen
+  #    right: |
+  #      Produced with <a href="https://quarto.org">Quarto</a>
+
+  favicon: assets/images/favicon.ico
+  site-url: https://cronkitedata.github.io/spreadsheets/
+  repo-url: https://github.com/cronkitedata/spreadsheets
+
+  chapters:
+    - index.qmd
+
+    - part: start.qmd
+      chapters:
+        - start-story.qmd
+        - start-math.qmd
+        - start-data-def.qmd
+        - start-data-diary.qmd
+        - start-hunt.qmd
+        - start-build-own.qmd
+        - start-scrape-nocode.qmd
+
+    - part: xl.qmd
+      chapters:
+        - xl-refresher.qmd
+        - xl-filter-sort.qmd
+        - xl-pivot.qmd
+        - xl-formulas.qmd
+        - xl-practice-noc.qmd
+#
+
+format:
+  html:
+    theme:
+      - cosmo
+      - custom.scss
+    code-link: true
+    code-copy: true
+    number-depth: 3
+#    fontsize: 1em
+    default-image-extension: png
+    df-print: paged
+    page-layout: full
+    toc-location: left
+
+# The default image extension means that you can resize for pdf output.
+# complex images come out too big, but the smaller ones are ok.
+# to use the default extension, just use the link without the extension
+# in an image markdown.
+
+#  pdf:
+#.   default-image-extension: pdf
+
+knitr: true
+
