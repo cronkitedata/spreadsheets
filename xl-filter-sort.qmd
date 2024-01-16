@@ -123,6 +123,8 @@ When you do this, notice that the bottom left briefly shows you the number of ro
 
 ![](https://cronkitedata.s3.amazonaws.com/images/xl-filter-sort-onefilter.gif)
 
+::: 
+
 :::{.callout-warning}
 This method works for small-ish and simple-ish columns. If your column has more than 10,000 different entries, such as names or addresses, only the first 10,000 will be considered. We only caught these for stories when someone did a fact-check using a different method of filtering. If your column has a lot of distinct entries, use option that says "Choose One", and then use the "Contains" option. Better yet, don't use filtering for counting things at all. 
 :::
@@ -137,7 +139,9 @@ Add more filters to narrow down your list of cases even more. For example, the N
 (Of course, the Times didn't stop there in trying to find more cases and teasing out more of them from this and other data. But this is a start. )
 
 ::: {.content-visible when-format="html"}
+
 ![](https://cronkitedata.s3.amazonaws.com/images/xl-filter-sort-unarmed-fleeing.gif)  
+
 ::: 
 
 

@@ -58,6 +58,10 @@ book:
         - xl-pivot.qmd
         - xl-formulas.qmd
         - xl-practice-noc.qmd
+    
+  appendices:
+   - appendix-math.qmd
+
 #
 
 format:
@@ -67,7 +71,7 @@ format:
       - custom.scss
     code-link: true
     code-copy: true
-    number-depth: 3
+    number-depth: 2
 #    fontsize: 1em
     default-image-extension: png
     df-print: paged

@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://cronkitedata.github.io/spreadsheets/index.html</loc>
-    <lastmod>2022-10-24T15:48:27.433Z</lastmod>
+    <lastmod>2024-01-15T23:57:02.284Z</lastmod>
   </url>
   <url>
     <loc>https://cronkitedata.github.io/spreadsheets/start.html</loc>
@@ -18,7 +18,7 @@
   </url>
   <url>
     <loc>https://cronkitedata.github.io/spreadsheets/start-data-def.html</loc>
-    <lastmod>2024-01-15T18:01:20.340Z</lastmod>
+    <lastmod>2024-01-07T21:06:20.340Z</lastmod>
   </url>
   <url>
     <loc>https://cronkitedata.github.io/spreadsheets/start-data-diary.html</loc>
@@ -26,7 +26,7 @@
   </url>
   <url>
     <loc>https://cronkitedata.github.io/spreadsheets/start-hunt.html</loc>
-    <lastmod>2024-01-15T18:01:20.340Z</lastmod>
+    <lastmod>2024-01-15T23:51:49.835Z</lastmod>
   </url>
   <url>
     <loc>https://cronkitedata.github.io/spreadsheets/start-build-own.html</loc>
@@ -46,7 +46,7 @@
   </url>
   <url>
     <loc>https://cronkitedata.github.io/spreadsheets/xl-filter-sort.html</loc>
-    <lastmod>2024-01-15T18:01:20.341Z</lastmod>
+    <lastmod>2024-01-16T00:07:43.576Z</lastmod>
   </url>
   <url>
     <loc>https://cronkitedata.github.io/spreadsheets/xl-pivot.html</loc>
@@ -59,5 +59,9 @@
   <url>
     <loc>https://cronkitedata.github.io/spreadsheets/xl-practice-noc.html</loc>
     <lastmod>2024-01-15T18:01:20.342Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cronkitedata.github.io/spreadsheets/appendix-math.html</loc>
+    <lastmod>2024-01-15T18:01:19.936Z</lastmod>
   </url>
 </urlset>
