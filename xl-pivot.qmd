@@ -1,9 +1,9 @@
 # Grouping with pivot tables {#xl-pivot}
 
 ::: {.alert .alert-secondary}
-This continues with the Washington Post's police shooting database, but I updated it to include the descriptions of ethnicities.
+This continues with the Washington Post's police shooting database, but updated with the answers to the previous lesson. The original data is here:
 
-[Download the new version](https://cronkitedata.s3.amazonaws.com/xlfiles/wapo-shootings-pivot.xlsx)
+[Download the new version](https://cronkitedata.s3.amazonaws.com/xlfiles/wapo-shootings.xlsx)
 :::
 
 In the wake of a police shooting in 2016, reporter Mitch Smith obtained a [list of traffic stops](https://cronkitedata.s3.amazonaws.com/xlfiles/saintanthony_police.xlsx) from the St. Anthony Police Department in Minnesota. He was writing a story on Philandro Castile's death and was running out of time. He wanted to answer a simple question: Were minority motorists more likely to be stopped in St. Anthony than whites?
@@ -46,7 +46,7 @@ A lot of reporters try to do everything with filters. Once they learn pivot tabl
 
 If you wanted to know *how many* people of each race/ethnicity were shot and killed, here's one way you can do it:
 
-1.  Using your data table, use the filter the column in the [new spreadsheet](https://cronkitedata.s3.amazonaws.com/xlfiles/wapo-shootings-pivot.xlsx) called "Ethnicity" to show only "Black non-Hispanic" victims.
+1.  Using a data table, use the filter the column called "Ethnicity" to show only "Black non-Hispanic" victims.
 
 ::: grid
 ::: {.g-col-5 .ps-4 .pe-2}
@@ -98,9 +98,13 @@ If all goes well, it will look like your data disappeared. It didn't -- you're j
 
 The section on the right gives you an outline of what to do. The section on the left will get filled in as you make your pivot table. If you want to see the number of fatalities by ethnicity, drag that column into the "Rows" area, then drag something that's always filled out into the Values area (`state` is a safe one in this data).
 
+
+::: callout-important
 Be sure to ALWAYS use something that has something filled in all the time for this. If you look at the filter, it must not have an option at the bottom that says `(Blanks)`. If you ignore this, your answer **will be wrong**, since the calculation will only count filled-in cells.
 
 ![](assets/images/xl-pivot-success.png){width="100%"}
+
+::: 
 
 ### Percents of total {.unnumbered}
 
@@ -110,7 +114,7 @@ It's hard to compare raw numbers unless they're really small. Instead, we'd like
 
 To remove it, right-click on it and choose "Remove"Count of state2"".
 
-### More variables {.unnumbered}
+### More columns {.unnumbered}
 
 Suppose you'd like to see the number of fatalities by year, with the years across the top and the `ethnicity` down the sides. Drag the `year` variable into the column area . Sorting can get hinky on pivot tables, but in this case it will work to put the largest number on top. This won't work with percentages -- it still sorts by the underlying number.
 

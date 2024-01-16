@@ -253,7 +253,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#setting-up-the-pivot-table" id="toc-setting-up-the-pivot-table" class="nav-link" data-scroll-target="#setting-up-the-pivot-table">Setting up the pivot table</a></li>
   <li><a href="#counting-or-how-many" id="toc-counting-or-how-many" class="nav-link" data-scroll-target="#counting-or-how-many">Counting , or “how many”?</a></li>
   <li><a href="#percents-of-total" id="toc-percents-of-total" class="nav-link" data-scroll-target="#percents-of-total">Percents of total</a></li>
-  <li><a href="#more-variables" id="toc-more-variables" class="nav-link" data-scroll-target="#more-variables">More variables</a></li>
+  <li><a href="#more-columns" id="toc-more-columns" class="nav-link" data-scroll-target="#more-columns">More columns</a></li>
   <li><a href="#even-more-detail" id="toc-even-more-detail" class="nav-link" data-scroll-target="#even-more-detail">Even more detail</a></li>
   <li><a href="#go-back-to-your-raw-data" id="toc-go-back-to-your-raw-data" class="nav-link" data-scroll-target="#go-back-to-your-raw-data">Go back to your raw data</a></li>
   </ul></li>
@@ -297,8 +297,8 @@ ul.task-list li input[type="checkbox"] {
 
 
 <div class="alert alert-secondary">
-<p>This continues with the Washington Post’s police shooting database, but I updated it to include the descriptions of ethnicities.</p>
-<p><a href="https://cronkitedata.s3.amazonaws.com/xlfiles/wapo-shootings-pivot.xlsx">Download the new version</a></p>
+<p>This continues with the Washington Post’s police shooting database, but updated with the answers to the previous lesson. The original data is here:</p>
+<p><a href="https://cronkitedata.s3.amazonaws.com/xlfiles/wapo-shootings.xlsx">Download the new version</a></p>
 </div>
 <p>In the wake of a police shooting in 2016, reporter Mitch Smith obtained a <a href="https://cronkitedata.s3.amazonaws.com/xlfiles/saintanthony_police.xlsx">list of traffic stops</a> from the St.&nbsp;Anthony Police Department in Minnesota. He was writing a story on Philandro Castile’s death and was running out of time. He wanted to answer a simple question: Were minority motorists more likely to be stopped in St.&nbsp;Anthony than whites?</p>
 <p>Rob Gebeloff made a quick pivot table to answer the question. That night, <a href="https://www.nytimes.com/2016/07/13/us/philando-castile-minnesota-police-shooting.html">Smith wrote</a>:</p>
@@ -333,7 +333,7 @@ ul.task-list li input[type="checkbox"] {
 <p>A lot of reporters try to do everything with filters. Once they learn pivot tables, they try to do everything with pivot tables. They’re two different animals – filtering is used for <em>detail</em>, and grouping (or pivot tables) are for <em>summary</em>. Here’s one way of understanding what pivot tables do before you try to make one.</p>
 <p>If you wanted to know <em>how many</em> people of each race/ethnicity were shot and killed, here’s one way you can do it:</p>
 <ol type="1">
-<li>Using your data table, use the filter the column in the <a href="https://cronkitedata.s3.amazonaws.com/xlfiles/wapo-shootings-pivot.xlsx">new spreadsheet</a> called “Ethnicity” to show only “Black non-Hispanic” victims.</li>
+<li>Using a data table, use the filter the column called “Ethnicity” to show only “Black non-Hispanic” victims.</li>
 </ol>
 <div class="grid">
 <div class="g-col-5 ps-4 pe-2">
@@ -402,8 +402,20 @@ Errata
 <section id="counting-or-how-many" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="counting-or-how-many">Counting , or “how many”?</h3>
 <p>The section on the right gives you an outline of what to do. The section on the left will get filled in as you make your pivot table. If you want to see the number of fatalities by ethnicity, drag that column into the “Rows” area, then drag something that’s always filled out into the Values area (<code>state</code> is a safe one in this data).</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>Be sure to ALWAYS use something that has something filled in all the time for this. If you look at the filter, it must not have an option at the bottom that says <code>(Blanks)</code>. If you ignore this, your answer <strong>will be wrong</strong>, since the calculation will only count filled-in cells.</p>
 <p><img src="assets/images/xl-pivot-success.png" class="img-fluid" style="width:100.0%"></p>
+</div>
+</div>
 </section>
 <section id="percents-of-total" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="percents-of-total">Percents of total</h3>
@@ -411,8 +423,8 @@ Errata
 <p><img src="assets/images/xl-pivot-percentcolumn.png" class="img-fluid" style="width:100.0%"></p>
 <p>To remove it, right-click on it and choose “Remove”Count of state2”“.</p>
 </section>
-<section id="more-variables" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="more-variables">More variables</h3>
+<section id="more-columns" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="more-columns">More columns</h3>
 <p>Suppose you’d like to see the number of fatalities by year, with the years across the top and the <code>ethnicity</code> down the sides. Drag the <code>year</code> variable into the column area . Sorting can get hinky on pivot tables, but in this case it will work to put the largest number on top. This won’t work with percentages – it still sorts by the underlying number.</p>
 <p><img src="assets/images/xl-pivot-twovariables.png" class="img-fluid" style="width:100.0%"></p>
 </section>
